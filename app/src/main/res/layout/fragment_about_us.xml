@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AboutUsFragment">
+
+
+    <ScrollView
+        android:id="@+id/scroll_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/about"
+                android:background="@color/white"
+                android:adjustViewBounds="true"/>
+
+
+            <TextView
+                android:id="@+id/hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/about"
+                android:layout_marginTop="20dp"
+                android:text="Hard To Smart Solution"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/we"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hard"
+                android:layout_margin="20dp"
+                android:text="@string/hardToSmart"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/vision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/we"
+                android:text="Our Vision"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/ease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/vision"
+                android:layout_margin="20dp"
+                android:text="‘Ease of student’s strugggle’"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/mission"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ease"
+                android:text="Our Mission"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/accelerate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mission"
+                android:layout_margin="20dp"
+                android:text="@string/toAccelerate"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/values"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accelerate"
+                android:text="Our Core Values"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+
+            <ImageView
+                android:id="@+id/img_values"
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:layout_below="@+id/values"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/values"/>
+            <TextView
+                android:id="@+id/offers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_values"
+                android:text="What HYPSTUMA offers you"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/we_offer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/offers"
+                android:layout_margin="20dp"
+                android:text="@string/weOffer"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

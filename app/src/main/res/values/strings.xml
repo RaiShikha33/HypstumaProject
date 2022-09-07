@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hypstuma2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="location">6/23,  Ponnusamy Street,
+         Ayanavaram,  Chennai,
+         Tamil Nadu  600023</string>
+    <string name="hardToSmart">We are an Ed-Tech company. We are there to empower younger minds and develop bespoke skills within anyone who intent to work.</string>
+    <string name="toAccelerate">‘To accelerate worlds modernization – by providing skilled minds and developing the skills within anyone who intent to work’</string>
+    <string name="weOffer">We offers you the professional work experience that offers meaningful ,practical work related to field of study or career interest. We gives you the zeal and enthusiasm for career exploration and to learn new skills . Before embarking on your job journey, all you have is your own experience. The secret of getting ahead getting started, Start your career with Team Hypstuma . Our work place promotes employee safety ,growth and goal attainment. For instance we believe that getting a sense of achievement through work is a core priority for company.</string>
+</resources>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ContactUsFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_rawRes="@raw/contact"
+            android:background="@color/white"/>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="230dp"
+                android:background="@color/dark_grey"/>
+
+            <TextView
+                android:id="@+id/t_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="245dp"
+                />
+            <EditText
+                android:id="@+id/e_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_name"
+                android:hint="Your Full Name"
+                android:textColorHint="@color/black"
+                android:background="@color/blue3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/t_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e_name"
+                />
+            <EditText
+                android:id="@+id/e_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_email"
+                android:hint="john@example.com"
+                android:textColorHint="@color/black"
+                android:background="@color/blue3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                />
+
+            <TextView
+                android:id="@+id/t_mob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile Number"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e_email"
+                />
+            <EditText
+                android:id="@+id/e_mob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_mob"
+                android:hint="Your Mobile Number"
+                android:textColorHint="@color/black"
+                android:background="@color/blue3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/t_sub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e_mob"
+                />
+            <EditText
+                android:id="@+id/e_sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_sub"
+                android:hint="Subject of query"
+                android:textColorHint="@color/black"
+                android:background="@color/blue3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/t_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textColor="@color/blue"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/e_sub"
+                />
+            <EditText
+                android:id="@+id/e_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/t_msg"
+                android:hint="Hey there!! We are here for you 24*7. How can we help you?"
+                android:textColorHint="@color/black"
+                android:background="@color/blue3"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/black"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/e_msg"
+                android:text="Submit"
+                android:background="@drawable/button_border"
+                android:layout_margin="15dp"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/dark_grey"
+                android:layout_below="@+id/submit"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/getInTouch"
+                android:text="Get in touch!"
+                android:layout_below="@id/view1"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location1"
+                android:layout_below="@+id/getInTouch"
+                android:layout_margin="10dp"
+                android:text="LOCATION"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/location"
+                android:layout_below="@+id/location1"
+                android:text="6/23,  Ponnusamy Street,  Ayanavaram,  Chennai,
+         Tamil Nadu  600023"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                android:layout_below="@+id/location"
+                android:layout_margin="10dp"
+                android:text="CONTACT US"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact1"
+                android:layout_below="@+id/contact"
+                android:text="Mobile : +91 80941 78798"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact2"
+                android:layout_below="@+id/contact1"
+                android:text="Landline: 044 35633814"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact3"
+                android:layout_below="@+id/contact2"
+                android:text="Mail: info@hypstuma.com"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/office"
+                android:layout_below="@+id/contact3"
+                android:layout_margin="10dp"
+                android:text="OUR OFFICE HOURS"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/office1"
+                android:layout_below="@+id/office"
+                android:text="MON-FRI 09:00 – 19:00"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/office2"
+                android:layout_below="@+id/office1"
+                android:text="SAT-SUN – Available Online"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/follow"
+                android:layout_below="@+id/office2"
+                android:layout_margin="10dp"
+                android:text="FOLLOW US ON"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_centerHorizontal="true"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/follow"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/facebook"
+                    android:layout_margin="20dp"
+                    android:clickable="true"/>
+                <ImageView
+                    android:id="@+id/insta"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/instagram"
+                    android:layout_margin="20dp"
+                    android:clickable="true"/>
+                <ImageView
+                    android:id="@+id/linkedin"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/linkedin"
+                    android:layout_margin="20dp"
+                    android:clickable="true"/>
+                <ImageView
+                    android:id="@+id/yt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/youtube"
+                    android:layout_margin="20dp"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
